@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomerAPP.Data.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CodeCamper.Data.Fakes.ShimRepositoryProvider">
+            <summary>Shim type of CodeCamper.Data.RepositoryProvider</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.#ctor(CodeCamper.Data.RepositoryProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:CodeCamper.Data.Fakes.ShimRepositoryProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.AllInstances.DbContextGet">
+            <summary>Sets the shim of RepositoryProvider.get_DbContext()</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.AllInstances.DbContextSetDbContext">
+            <summary>Sets the shim of RepositoryProvider.set_DbContext(DbContext value)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.AllInstances.GetRepositoryForEntityTypeOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CodeCamper.Data.RepositoryProvider,CustomerAPP.Data.IRepository{``0}})">
+            <summary>Sets the shim of RepositoryProvider.GetRepositoryForEntityType()</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.AllInstances.GetRepositoryOf1FuncOfDbContextObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CodeCamper.Data.RepositoryProvider,System.Func{System.Data.Entity.DbContext,System.Object},``0})">
+            <summary>Sets the shim of RepositoryProvider.GetRepository(Func`2&lt;DbContext,Object&gt; factory)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.AllInstances.MakeRepositoryOf1FuncOfDbContextObjectDbContext``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CodeCamper.Data.RepositoryProvider,System.Func{System.Data.Entity.DbContext,System.Object},System.Data.Entity.DbContext,``0})">
+            <summary>Sets the shim of RepositoryProvider.MakeRepository(Func`2&lt;DbContext,Object&gt; factory, DbContext dbContext)</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.AllInstances.RepositoriesGet">
+            <summary>Sets the shim of RepositoryProvider.get_Repositories()</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.AllInstances.RepositoriesSetDictionaryOfTypeObject">
+            <summary>Sets the shim of RepositoryProvider.set_Repositories(Dictionary`2&lt;Type,Object&gt; value)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.AllInstances.SetRepositoryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{CodeCamper.Data.RepositoryProvider,``0})">
+            <summary>Sets the shim of RepositoryProvider.SetRepository(!!0 repository)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.Bind(CustomerAPP.Data.IRepositoryProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.ConstructorRepositoryFactories">
+            <summary>Sets the shim of RepositoryProvider.RepositoryProvider(RepositoryFactories repositoryFactories)</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.DbContextGet">
+            <summary>Sets the shim of RepositoryProvider.get_DbContext()</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.DbContextSetDbContext">
+            <summary>Sets the shim of RepositoryProvider.set_DbContext(DbContext value)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.GetRepositoryForEntityTypeOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CustomerAPP.Data.IRepository{``0}})">
+            <summary>Sets the shim of RepositoryProvider.GetRepositoryForEntityType()</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.GetRepositoryOf1FuncOfDbContextObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Data.Entity.DbContext,System.Object},``0})">
+            <summary>Sets the shim of RepositoryProvider.GetRepository(Func`2&lt;DbContext,Object&gt; factory)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.MakeRepositoryOf1FuncOfDbContextObjectDbContext``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Data.Entity.DbContext,System.Object},System.Data.Entity.DbContext,``0})">
+            <summary>Sets the shim of RepositoryProvider.MakeRepository(Func`2&lt;DbContext,Object&gt; factory, DbContext dbContext)</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.RepositoriesGet">
+            <summary>Sets the shim of RepositoryProvider.get_Repositories()</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.ShimRepositoryProvider.RepositoriesSetDictionaryOfTypeObject">
+            <summary>Sets the shim of RepositoryProvider.set_Repositories(Dictionary`2&lt;Type,Object&gt; value)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.ShimRepositoryProvider.SetRepositoryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets the shim of RepositoryProvider.SetRepository(!!0 repository)</summary>
+        </member>
+        <member name="T:CodeCamper.Data.Fakes.StubRepositoryProvider">
+            <summary>Stub type of CodeCamper.Data.RepositoryProvider</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.StubRepositoryProvider.#ctor(CustomerAPP.Data.RepositoryFactories)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.StubRepositoryProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.StubRepositoryProvider.GetRepository``1(System.Func{System.Data.Entity.DbContext,System.Object})">
+            <summary>Sets the stub of RepositoryProvider.GetRepository(Func`2&lt;DbContext,Object&gt; factory)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.StubRepositoryProvider.GetRepositoryOf1FuncOfDbContextObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Data.Entity.DbContext,System.Object},``0})">
+            <summary>Sets stubs of GetRepository(Func`2&lt;DbContext,Object&gt; factory)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.StubRepositoryProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubRepositoryProvider</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.StubRepositoryProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CodeCamper.Data.Fakes.StubRepositoryProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.StubRepositoryProvider.MakeRepository``1(System.Func{System.Data.Entity.DbContext,System.Object},System.Data.Entity.DbContext)">
+            <summary>Sets the stub of RepositoryProvider.MakeRepository(Func`2&lt;DbContext,Object&gt; factory, DbContext dbContext)</summary>
+        </member>
+        <member name="M:CodeCamper.Data.Fakes.StubRepositoryProvider.MakeRepositoryOf1FuncOfDbContextObjectDbContext``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Data.Entity.DbContext,System.Object},System.Data.Entity.DbContext,``0})">
+            <summary>Sets stubs of MakeRepository(Func`2&lt;DbContext,Object&gt; factory, DbContext dbContext)</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.ShimCustomerAPPUow">
+            <summary>Shim type of CustomerAPP.Data.CustomerAPPUow</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.#ctor(CustomerAPP.Data.CustomerAPPUow)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.Commit">
+            <summary>Sets the shim of CustomerAPPUow.Commit()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.CreateDbContext">
+            <summary>Sets the shim of CustomerAPPUow.CreateDbContext()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.CustomersRepositoryGet">
+            <summary>Sets the shim of CustomerAPPUow.get_CustomersRepository()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.DbContextGet">
+            <summary>Sets the shim of CustomerAPPUow.get_DbContext()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.DbContextSetCustomerDbContext">
+            <summary>Sets the shim of CustomerAPPUow.set_DbContext(CustomerDbContext value)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.Dispose">
+            <summary>Sets the shim of CustomerAPPUow.Dispose()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of CustomerAPPUow.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.GetRepoOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CustomerAPP.Data.CustomerAPPUow,``0})">
+            <summary>Sets the shim of CustomerAPPUow.GetRepo()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.GetStandardRepoOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CustomerAPP.Data.CustomerAPPUow,CustomerAPP.Data.IRepository{``0}})">
+            <summary>Sets the shim of CustomerAPPUow.GetStandardRepo()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.RepositoryProviderGet">
+            <summary>Sets the shim of CustomerAPPUow.get_RepositoryProvider()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.AllInstances.RepositoryProviderSetIRepositoryProvider">
+            <summary>Sets the shim of CustomerAPPUow.set_RepositoryProvider(IRepositoryProvider value)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.Bind(CustomerAPP.Data.ICustomerAPPUow)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.Commit">
+            <summary>Sets the shim of CustomerAPPUow.Commit()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.ConstructorIRepositoryProvider">
+            <summary>Sets the shim of CustomerAPPUow.CustomerAPPUow(IRepositoryProvider repositoryProvider)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.CreateDbContext">
+            <summary>Sets the shim of CustomerAPPUow.CreateDbContext()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.CustomersRepositoryGet">
+            <summary>Sets the shim of CustomerAPPUow.get_CustomersRepository()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.DbContextGet">
+            <summary>Sets the shim of CustomerAPPUow.get_DbContext()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.DbContextSetCustomerDbContext">
+            <summary>Sets the shim of CustomerAPPUow.set_DbContext(CustomerDbContext value)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.Dispose">
+            <summary>Sets the shim of CustomerAPPUow.Dispose()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.DisposeBoolean">
+            <summary>Sets the shim of CustomerAPPUow.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.GetRepoOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0})">
+            <summary>Sets the shim of CustomerAPPUow.GetRepo()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.GetStandardRepoOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CustomerAPP.Data.IRepository{``0}})">
+            <summary>Sets the shim of CustomerAPPUow.GetStandardRepo()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.RepositoryProviderGet">
+            <summary>Sets the shim of CustomerAPPUow.get_RepositoryProvider()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerAPPUow.RepositoryProviderSetIRepositoryProvider">
+            <summary>Sets the shim of CustomerAPPUow.set_RepositoryProvider(IRepositoryProvider value)</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.ShimCustomerDbContext">
+            <summary>Shim type of CustomerAPP.Data.CustomerDbContext</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerDbContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerDbContext.#ctor(CustomerAPP.Data.CustomerDbContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.ShimCustomerDbContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerDbContext.AllInstances.CustomersGet">
+            <summary>Sets the shim of CustomerDbContext.get_Customers()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerDbContext.AllInstances.CustomersSetDbSetOfCustomer">
+            <summary>Sets the shim of CustomerDbContext.set_Customers(DbSet`1&lt;Customer&gt; value)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerDbContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerDbContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerDbContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerDbContext.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimCustomerDbContext.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerDbContext.Constructor">
+            <summary>Sets the shim of CustomerDbContext.CustomerDbContext()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerDbContext.CustomersGet">
+            <summary>Sets the shim of CustomerDbContext.get_Customers()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimCustomerDbContext.CustomersSetDbSetOfCustomer">
+            <summary>Sets the shim of CustomerDbContext.set_Customers(DbSet`1&lt;Customer&gt; value)</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.ShimEFRepository`1">
+            <summary>Shim type of CustomerAPP.Data.EFRepository`1</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimEFRepository`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimEFRepository`1.#ctor(CustomerAPP.Data.EFRepository{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AddT0">
+            <summary>Sets the shim of EFRepository`1.Add(!0 entity)</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.AddT0">
+            <summary>Sets the shim of EFRepository`1.Add(!0 entity)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.DbContextGet">
+            <summary>Sets the shim of EFRepository`1.get_DbContext()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.DbContextSetDbContext">
+            <summary>Sets the shim of EFRepository`1.set_DbContext(DbContext value)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.DbSetGet">
+            <summary>Sets the shim of EFRepository`1.get_DbSet()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.DbSetSetDbSetOfT0">
+            <summary>Sets the shim of EFRepository`1.set_DbSet(DbSet`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.DeleteInt32">
+            <summary>Sets the shim of EFRepository`1.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.DeleteT0">
+            <summary>Sets the shim of EFRepository`1.Delete(!0 entity)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.GetAll">
+            <summary>Sets the shim of EFRepository`1.GetAll()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.GetByIdInt32">
+            <summary>Sets the shim of EFRepository`1.GetById(Int32 id)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.AllInstances.UpdateT0">
+            <summary>Sets the shim of EFRepository`1.Update(!0 entity)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimEFRepository`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimEFRepository`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimEFRepository`1.Bind(CustomerAPP.Data.IRepository{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.ConstructorDbContext">
+            <summary>Sets the shim of EFRepository`1.EFRepository`1(DbContext dbContext)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.DbContextGet">
+            <summary>Sets the shim of EFRepository`1.get_DbContext()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.DbContextSetDbContext">
+            <summary>Sets the shim of EFRepository`1.set_DbContext(DbContext value)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.DbSetGet">
+            <summary>Sets the shim of EFRepository`1.get_DbSet()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.DbSetSetDbSetOfT0">
+            <summary>Sets the shim of EFRepository`1.set_DbSet(DbSet`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.DeleteInt32">
+            <summary>Sets the shim of EFRepository`1.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.DeleteT0">
+            <summary>Sets the shim of EFRepository`1.Delete(!0 entity)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.GetAll">
+            <summary>Sets the shim of EFRepository`1.GetAll()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.GetByIdInt32">
+            <summary>Sets the shim of EFRepository`1.GetById(Int32 id)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimEFRepository`1.UpdateT0">
+            <summary>Sets the shim of EFRepository`1.Update(!0 entity)</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.ShimRepositoryFactories">
+            <summary>Shim type of CustomerAPP.Data.RepositoryFactories</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.#ctor(CustomerAPP.Data.RepositoryFactories)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.ShimRepositoryFactories.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.AllInstances.DefaultEntityRepositoryFactoryOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CustomerAPP.Data.RepositoryFactories,System.Func{System.Data.Entity.DbContext,System.Object}})">
+            <summary>Sets the shim of RepositoryFactories.DefaultEntityRepositoryFactory()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimRepositoryFactories.AllInstances.GetCodeCamperFactories">
+            <summary>Sets the shim of RepositoryFactories.GetCodeCamperFactories()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.AllInstances.GetRepositoryFactoryForEntityTypeOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CustomerAPP.Data.RepositoryFactories,System.Func{System.Data.Entity.DbContext,System.Object}})">
+            <summary>Sets the shim of RepositoryFactories.GetRepositoryFactoryForEntityType()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.AllInstances.GetRepositoryFactoryOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CustomerAPP.Data.RepositoryFactories,System.Func{System.Data.Entity.DbContext,System.Object}})">
+            <summary>Sets the shim of RepositoryFactories.GetRepositoryFactory()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimRepositoryFactories.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimRepositoryFactories.Constructor">
+            <summary>Sets the shim of RepositoryFactories.RepositoryFactories()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimRepositoryFactories.ConstructorIDictionaryOfTypeFuncOfDbContextObject">
+            <summary>Sets the shim of RepositoryFactories.RepositoryFactories(IDictionary`2&lt;Type,Func`2&lt;DbContext,Object&gt;&gt; factories)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.DefaultEntityRepositoryFactoryOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Data.Entity.DbContext,System.Object}})">
+            <summary>Sets the shim of RepositoryFactories.DefaultEntityRepositoryFactory()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.ShimRepositoryFactories.GetCodeCamperFactories">
+            <summary>Sets the shim of RepositoryFactories.GetCodeCamperFactories()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.GetRepositoryFactoryForEntityTypeOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Data.Entity.DbContext,System.Object}})">
+            <summary>Sets the shim of RepositoryFactories.GetRepositoryFactoryForEntityType()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.ShimRepositoryFactories.GetRepositoryFactoryOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Data.Entity.DbContext,System.Object}})">
+            <summary>Sets the shim of RepositoryFactories.GetRepositoryFactory()</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.StubCustomerAPPUow">
+            <summary>Stub type of CustomerAPP.Data.CustomerAPPUow</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerAPPUow.#ctor(CustomerAPP.Data.IRepositoryProvider)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubCustomerAPPUow.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerAPPUow.Dispose(System.Boolean)">
+            <summary>Sets the stub of CustomerAPPUow.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerAPPUow.DisposeBoolean">
+            <summary>Sets the stub of CustomerAPPUow.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerAPPUow.InitializeStub">
+            <summary>Initializes a new instance of type StubCustomerAPPUow</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubCustomerAPPUow.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubCustomerAPPUow.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.StubCustomerDbContext">
+            <summary>Stub type of CustomerAPP.Data.CustomerDbContext</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubCustomerDbContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.Dispose(System.Boolean)">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.DisposeBoolean">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.InitializeStub">
+            <summary>Initializes a new instance of type StubCustomerDbContext</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubCustomerDbContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubCustomerDbContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of DbContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of DbContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.SaveChanges">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.SaveChanges01">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.SaveChangesAsync">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.SaveChangesAsync01">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.SaveChangesAsyncCancellationToken">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.Set(System.Type)">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.Set``1">
+            <summary>Sets the stub of DbContext.Set()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.DbSet{``0}})">
+            <summary>Sets stubs of Set()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.SetType">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubCustomerDbContext.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubCustomerDbContext.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.StubEFRepository`1">
+            <summary>Stub type of CustomerAPP.Data.EFRepository`1</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubEFRepository`1.#ctor(System.Data.Entity.DbContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubEFRepository`1.Add(`0)">
+            <summary>Sets the stub of EFRepository`1.Add(!0 entity)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubEFRepository`1.AddT0">
+            <summary>Sets the stub of EFRepository`1.Add(!0 entity)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubEFRepository`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubEFRepository`1.Delete(System.Int32)">
+            <summary>Sets the stub of EFRepository`1.Delete(Int32 id)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubEFRepository`1.Delete(`0)">
+            <summary>Sets the stub of EFRepository`1.Delete(!0 entity)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubEFRepository`1.DeleteInt32">
+            <summary>Sets the stub of EFRepository`1.Delete(Int32 id)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubEFRepository`1.DeleteT0">
+            <summary>Sets the stub of EFRepository`1.Delete(!0 entity)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubEFRepository`1.GetAll">
+            <summary>Sets the stub of EFRepository`1.GetAll()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubEFRepository`1.GetAll01">
+            <summary>Sets the stub of EFRepository`1.GetAll()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubEFRepository`1.GetById(System.Int32)">
+            <summary>Sets the stub of EFRepository`1.GetById(Int32 id)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubEFRepository`1.GetByIdInt32">
+            <summary>Sets the stub of EFRepository`1.GetById(Int32 id)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubEFRepository`1.InitializeStub">
+            <summary>Initializes a new instance of type StubEFRepository</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubEFRepository`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubEFRepository`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubEFRepository`1.Update(`0)">
+            <summary>Sets the stub of EFRepository`1.Update(!0 entity)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubEFRepository`1.UpdateT0">
+            <summary>Sets the stub of EFRepository`1.Update(!0 entity)</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.StubICustomerAPPUow">
+            <summary>Stub type of CustomerAPP.Data.ICustomerAPPUow</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubICustomerAPPUow.#ctor">
+            <summary>Initializes a new instance of type StubICustomerAPPUow</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubICustomerAPPUow.Commit">
+            <summary>Sets the stub of ICustomerAPPUow.Commit()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubICustomerAPPUow.CustomerAPP#Data#ICustomerAPPUow#Commit">
+            <summary>Sets the stub of ICustomerAPPUow.Commit()</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubICustomerAPPUow.CustomerAPP#Data#ICustomerAPPUow#CustomersRepository">
+            <summary>Sets the stub of ICustomerAPPUow.get_CustomersRepository()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubICustomerAPPUow.CustomersRepositoryGet">
+            <summary>Sets the stub of ICustomerAPPUow.get_CustomersRepository()</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.StubIRepository`1">
+            <summary>Stub type of CustomerAPP.Data.IRepository`1</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepository`1.#ctor">
+            <summary>Initializes a new instance of type StubIRepository</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubIRepository`1.AddT0">
+            <summary>Sets the stub of IRepository`1.Add(!0 entity)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepository`1.CustomerAPP#Data#IRepository{T}#Add(`0)">
+            <summary>Sets the stub of IRepository`1.Add(!0 entity)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepository`1.CustomerAPP#Data#IRepository{T}#Delete(`0)">
+            <summary>Sets the stub of IRepository`1.Delete(!0 entity)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepository`1.CustomerAPP#Data#IRepository{T}#Delete(System.Int32)">
+            <summary>Sets the stub of IRepository`1.Delete(Int32 id)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepository`1.CustomerAPP#Data#IRepository{T}#GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepository`1.CustomerAPP#Data#IRepository{T}#GetById(System.Int32)">
+            <summary>Sets the stub of IRepository`1.GetById(Int32 id)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepository`1.CustomerAPP#Data#IRepository{T}#Update(`0)">
+            <summary>Sets the stub of IRepository`1.Update(!0 entity)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubIRepository`1.DeleteInt32">
+            <summary>Sets the stub of IRepository`1.Delete(Int32 id)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubIRepository`1.DeleteT0">
+            <summary>Sets the stub of IRepository`1.Delete(!0 entity)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubIRepository`1.GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubIRepository`1.GetByIdInt32">
+            <summary>Sets the stub of IRepository`1.GetById(Int32 id)</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubIRepository`1.UpdateT0">
+            <summary>Sets the stub of IRepository`1.Update(!0 entity)</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.StubIRepositoryProvider">
+            <summary>Stub type of CustomerAPP.Data.IRepositoryProvider</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepositoryProvider.#ctor">
+            <summary>Initializes a new instance of type StubIRepositoryProvider</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepositoryProvider.AttachBackingFieldToDbContext">
+            <summary>Attaches delegates to emulate StubIRepositoryProvider.DbContext as a property with a backing field.</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepositoryProvider.CustomerAPP#Data#IRepositoryProvider#GetRepository``1(System.Func{System.Data.Entity.DbContext,System.Object})">
+            <summary>Sets the stub of IRepositoryProvider.GetRepository(Func`2&lt;DbContext,Object&gt; factory)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepositoryProvider.CustomerAPP#Data#IRepositoryProvider#GetRepositoryForEntityType``1">
+            <summary>Sets the stub of IRepositoryProvider.GetRepositoryForEntityType()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepositoryProvider.CustomerAPP#Data#IRepositoryProvider#SetRepository``1(``0)">
+            <summary>Sets the stub of IRepositoryProvider.SetRepository(!!0 repository)</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubIRepositoryProvider.CustomerAPP#Data#IRepositoryProvider#DbContext">
+            <summary>Sets the stub of IRepositoryProvider.get_DbContext()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubIRepositoryProvider.DbContextGet">
+            <summary>Sets the stub of IRepositoryProvider.get_DbContext()</summary>
+        </member>
+        <member name="F:CustomerAPP.Data.Fakes.StubIRepositoryProvider.DbContextSetDbContext">
+            <summary>Sets the stub of IRepositoryProvider.set_DbContext(DbContext value)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepositoryProvider.GetRepositoryForEntityTypeOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{CustomerAPP.Data.IRepository{``0}})">
+            <summary>Sets stubs of GetRepositoryForEntityType()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepositoryProvider.GetRepositoryOf1FuncOfDbContextObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Data.Entity.DbContext,System.Object},``0})">
+            <summary>Sets stubs of GetRepository(Func`2&lt;DbContext,Object&gt; factory)</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubIRepositoryProvider.SetRepositoryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets stubs of SetRepository(!!0 repository)</summary>
+        </member>
+        <member name="T:CustomerAPP.Data.Fakes.StubRepositoryFactories">
+            <summary>Stub type of CustomerAPP.Data.RepositoryFactories</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubRepositoryFactories.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubRepositoryFactories.#ctor(System.Collections.Generic.IDictionary{System.Type,System.Func{System.Data.Entity.DbContext,System.Object}})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubRepositoryFactories.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubRepositoryFactories.DefaultEntityRepositoryFactory``1">
+            <summary>Sets the stub of RepositoryFactories.DefaultEntityRepositoryFactory()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubRepositoryFactories.DefaultEntityRepositoryFactoryOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.Data.Entity.DbContext,System.Object}})">
+            <summary>Sets stubs of DefaultEntityRepositoryFactory()</summary>
+        </member>
+        <member name="M:CustomerAPP.Data.Fakes.StubRepositoryFactories.InitializeStub">
+            <summary>Initializes a new instance of type StubRepositoryFactories</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubRepositoryFactories.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CustomerAPP.Data.Fakes.StubRepositoryFactories.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

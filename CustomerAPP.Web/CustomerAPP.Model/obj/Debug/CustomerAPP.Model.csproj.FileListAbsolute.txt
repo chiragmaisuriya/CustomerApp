@@ -1,0 +1,5 @@
+d:\chirag.maisuriya\my documents\visual studio 2015\Projects\CustomerAPP.Web\CustomerAPP.Model\bin\Debug\CustomerAPP.Model.dll
+d:\chirag.maisuriya\my documents\visual studio 2015\Projects\CustomerAPP.Web\CustomerAPP.Model\bin\Debug\CustomerAPP.Model.pdb
+d:\chirag.maisuriya\my documents\visual studio 2015\Projects\CustomerAPP.Web\CustomerAPP.Model\obj\Debug\CustomerAPP.Model.csprojResolveAssemblyReference.cache
+d:\chirag.maisuriya\my documents\visual studio 2015\Projects\CustomerAPP.Web\CustomerAPP.Model\obj\Debug\CustomerAPP.Model.dll
+d:\chirag.maisuriya\my documents\visual studio 2015\Projects\CustomerAPP.Web\CustomerAPP.Model\obj\Debug\CustomerAPP.Model.pdb
