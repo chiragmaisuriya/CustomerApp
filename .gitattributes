@@ -1,3 +1,2 @@
-$ cat .gitattributes
-*.rb linguist-language=C#
-*.rb linguist-language=AngularJS
+packages/* linguist-vendored=true
+bin/* linguist-vendored=true
